@@ -39,8 +39,7 @@ fun LoginScreen(
                 .padding(32.dp)
                 .align(Alignment.Center)
                 .fillMaxWidth(),
-            isLoading = isLoading,
-            onClicked = { isLoading = true }
+            isLoading = isLoading
         )
     }
 }

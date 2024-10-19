@@ -8,6 +8,7 @@ coreKtx = "1.13.1"
 credentials = "1.2.2"
 datastorePreferences = "1.1.1"
 espressoCore = "3.5.1"
+google-api-client-version = "1.32.1"
 googleid = "1.1.1"
 hiltNavigationCompose = "1.2.0"
 hiltVersion = "2.49"
@@ -26,6 +27,7 @@ retrofit2KotlinxSerializationConverter = "1.0.0"
 [libraries]
 #compose
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+#noinspection CredentialDependency
 androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
 androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
@@ -41,6 +43,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 #other
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+google-api-client = { module = "com.google.api-client:google-api-client", version.ref = "google-api-client-version" }
 googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -75,7 +78,7 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 # Plugins defined by this project
-udemysecureauth-android-library = { id = "udemysecureauth.android.library", version = "unspecified"}
-udemysecureauth-android-library-compose = { id = "udemysecureauth.android.library.compose", version = "unspecified"}
-udemysecureauth-android-application-compose = { id = "udemysecureauth.android.application.compose", version = "unspecified"}
+udemysecureauth-android-library = { id = "udemysecureauth.android.library", version = "unspecified" }
+udemysecureauth-android-library-compose = { id = "udemysecureauth.android.library.compose", version = "unspecified" }
+udemysecureauth-android-application-compose = { id = "udemysecureauth.android.application.compose", version = "unspecified" }
 udemysecureauth-hilt = { id = "udemysecureauth.hilt", version = "unspecified" }

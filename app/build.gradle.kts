@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.dagger.hilt)
     alias(libs.plugins.udemysecureauth.android.application.compose)
     alias(libs.plugins.udemysecureauth.hilt)
 }
@@ -44,6 +43,7 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/DEPENDENCIES"
         }
     }
 }
@@ -54,6 +54,7 @@ dependencies {
 
     // Compose
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // Okhttp
     implementation(platform(libs.okhttp.bom))
@@ -61,7 +62,6 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.okhttp.urlconnection)
     implementation (libs.retrofit)
-
     implementation (libs.androidx.datastore.preferences)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
