@@ -50,7 +50,7 @@ fun GoogleButton(
         if (attemptSignIn) {
             val googleIdOption: GetGoogleIdOption = GetGoogleIdOption.Builder()
                 .setFilterByAuthorizedAccounts(false)
-                .setServerClientId("478706453786-grqf2f6iarqtgfsikt6k022fm5psrbkq.apps.googleusercontent.com")
+                .setServerClientId(Constants.AUDIENCE)
                 .setAutoSelectEnabled(false)
                 .build()
 
